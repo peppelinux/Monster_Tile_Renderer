@@ -235,7 +235,7 @@ class RENDER_PT_SetupTiles(bpy.types.Panel):
     # looks at current blend and uses it as a basename, the way i like it.
     # [TODO] update with new file name, without restart blender.
     # bpy.context.scene.update()
-    mfilepath = bpy.data.filepath
+    mfilepath = 'tiled_blend' #bpy.data.filepath
     this_blend = path.display_name_from_filepath(mfilepath)
 
     bts.MyFileName = StringProperty(
